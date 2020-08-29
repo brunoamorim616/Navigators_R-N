@@ -5,7 +5,7 @@ import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import Item from './Item';
-import Header from '../CustomHeader'
+import Header from '../CustomHeader';
 
 export function Showcase() {
 

@@ -7,7 +7,7 @@ export default function Item (props)  {
 
   return (
     
-    <TouchableOpacity style={styles.container} onPress={props.onCLick} >
+    <TouchableOpacity style={styles.container} onPress={props.oncLick} >
       <Image source={props.img} style={styles.itemImg}/>
       <Text style={styles.descText}>
         {props.children}

@@ -5,57 +5,57 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 
-
 import { Home } from '../Components/Home/index';
 import { Settings } from '../Components/Settings/index';
 import { Showcase } from '../Components/Showcase/index';
 
-const RootStack = createStackNavigator();
+/** WEB STACK */
+const Web = createStackNavigator();
 
-export const RootStackScreen = () =>(
-
-  <RootStack.Navigator headerMode="none">
-    <RootStack.Screen name="App" component={BottomTabStack} />
-  </RootStack.Navigator>
-
+export const WebStack = () => (
+  <Web.Navigator headerMode="nones">
+    <Web.Screen name="Home" component={HomeStack} />
+    <Web.Screen name="Showcase" component={ShowcaseStack} />
+    <Web.Screen name="Settings" component={SettingsStack} />
+  </Web.Navigator>
 );
 
-/** BOTTOM TABS */
-const BottomTab = createBottomTabNavigator();
+/** MOBILE STACK */
+const Mobile = createBottomTabNavigator();
 
-const BottomTabStack = () => (
-  
-  <BottomTab.Navigator tabBarOptions={{
+export const MobileStack = () => (
+
+  <Mobile.Navigator tabBarOptions={{
     inactiveBackgroundColor: 'black',
     inactiveTintColor: 'white',
     activeBackgroundColor: 'white',
-    activeTintColor:'black',
-    style:{
+    activeTintColor: 'black',
+    style: {
       width: '100%',
       backgroundColor: 'black',
       borderBottomWidth: 0,
       borderTopWidth: 0,
     }
-}}>
-    <BottomTab.Screen name="Home" component={HomeStack} options={{
+  }}>
+    <Mobile.Screen name="Home" component={HomeStack} options={{
       tabBarLabel: 'Princial',
-      tabBarIcon: ({color}) => (
+      tabBarIcon: ({ color }) => (
         <Ionicons name="md-home" color={color} size={30} />
       ),
-      }}/>
-    <BottomTab.Screen name="Showcase" component={ShowcaseStack} options={{
+    }} />
+    <Mobile.Screen name="Showcase" component={ShowcaseStack} options={{
       tabBarLabel: 'Vitrine',
-      tabBarIcon: ({color}) => (
+      tabBarIcon: ({ color }) => (
         <Entypo name="shop" color={color} size={30} />
       ),
-      }}/>
-    <BottomTab.Screen name="Settings" component={SettingsStack} options={{
+    }} />
+    <Mobile.Screen name="Settings" component={SettingsStack} options={{
       tabBarLabel: 'Configurações',
-      tabBarIcon: ({color}) => (
+      tabBarIcon: ({ color }) => (
         <Ionicons name="md-settings" color={color} size={30} />
       ),
-      }}/>
-  </BottomTab.Navigator>
+    }} />
+  </Mobile.Navigator>
 
 );
 
@@ -66,8 +66,8 @@ const ShowcaseStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Showcase" component={Showcase} options={{
       headerShown: false
-    }}/>
-    
+    }} />
+
   </Stack.Navigator>
 );
 
@@ -76,7 +76,7 @@ const HomeStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Home" component={Home} options={{
       headerShown: false,
-    }}/>
+    }} />
   </Stack.Navigator>
 );
 
@@ -85,6 +85,6 @@ const SettingsStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Settings" component={Settings} options={{
       headerShown: false,
-    }}/>
+    }} />
   </Stack.Navigator>
 )
