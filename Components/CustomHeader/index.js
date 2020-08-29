@@ -1,3 +1,4 @@
+/**HEADER COSTOMIZADO */
 
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, ScrollView, Image } from 'react-native';

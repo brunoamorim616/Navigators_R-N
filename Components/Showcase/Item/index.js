@@ -1,4 +1,4 @@
-/**SHOWCASE ITEM INDEX*/
+/** PRODUTO/ITEM */
 
 import React from 'react';
 import { Text, View, TouchableOpacity, StyleSheet, Image } from 'react-native';
