@@ -5,14 +5,14 @@ import { Text, View, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 
-export default function Header() {
+export default function ShowcaseHeader() {
 
     return (
         <View style={styles.header}>
             <View styles={styles.textContainer}>
 
                 <Text style={styles.textHeader}>
-                    <Image source={require('../../showcaseAssets/SouthWhite.png')} style={styles.LogoImg} />
+                    <Image source={require('../../../assets/SouthWhite.png')} style={styles.LogoImg} />
                      Camisetas
                 </Text>
                 <TouchableOpacity style={{ position: 'absolute', right: 0, alignSelf: 'center', paddingTop: 6 }}>

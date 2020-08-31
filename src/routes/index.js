@@ -5,9 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 
-import { Home } from '../Components/Home/index';
-import { Settings } from '../Components/Settings/index';
-import { Showcase } from '../Components/Showcase/index';
+import { Home } from '../screens/Home/index';
+import { Settings } from '../screens/Options/index';
+import { Showcase } from '../screens/Showcase/index';
 
 /** WEB STACK */
 const Web = createStackNavigator();

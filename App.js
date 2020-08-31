@@ -7,8 +7,8 @@ import { AppLoading } from 'expo';
 import { useFonts, Anton_400Regular} from '@expo-google-fonts/anton';
 import { useMediaQuery } from 'react-responsive';
 
-import { AuthContext } from './Routes/context';
-import { WebStack, MobileStack } from './Routes/index';
+import { AuthContext } from './src/routes/context';
+import { WebStack, MobileStack } from './src/routes/index';
 
 export default function App() {
 

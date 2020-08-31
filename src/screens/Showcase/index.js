@@ -4,8 +4,8 @@ import React from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import Item from './Item';
-import Header from '../CustomHeader';
+import Item from '../../Components/Showcase/Item';
+import ShowcaseHeader from '../../Components/CustomHeader/ShowcaseHeader';
 
 export function Showcase() {
 
@@ -14,12 +14,12 @@ export function Showcase() {
   return (
     <View style={styles.container}>
 
-      <Header/>
+      <ShowcaseHeader/>
 
       <ScrollView>
         <View style={styles.itemsGrid}>
 
-          <Item img={require('../../showcaseAssets/1.png')}
+          <Item img={require('../../assets/1.png')}
             cost="R$40,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -27,7 +27,7 @@ export function Showcase() {
             </Text>
           </Item>
 
-          <Item img={require('../../showcaseAssets/2.png')}
+          <Item img={require('../../assets/2.png')}
             cost="R$40,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -39,7 +39,7 @@ export function Showcase() {
 
         <View style={styles.itemsGrid}>
 
-          <Item img={require('../../showcaseAssets/3.png')}
+          <Item img={require('../../assets/3.png')}
             cost="R$46,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -47,7 +47,7 @@ export function Showcase() {
             </Text>
           </Item>
 
-          <Item img={require('../../showcaseAssets/4.png')}
+          <Item img={require('../../assets/4.png')}
             cost="R$120,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -59,7 +59,7 @@ export function Showcase() {
 
         <View style={styles.itemsGrid}>
 
-          <Item img={require('../../showcaseAssets/1.png')}
+          <Item img={require('../../assets/1.png')}
             cost="R$30,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -67,7 +67,7 @@ export function Showcase() {
             </Text>
           </Item>
 
-          <Item img={require('../../showcaseAssets/2.png')}
+          <Item img={require('../../assets/2.png')}
             cost="R$90,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -79,7 +79,7 @@ export function Showcase() {
 
         <View style={styles.itemsGrid}>
 
-          <Item img={require('../../showcaseAssets/3.png')}
+          <Item img={require('../../assets/3.png')}
             cost="R$80,90"
             onClick={() => alert('clicou')}>
             <Text>
@@ -87,7 +87,7 @@ export function Showcase() {
             </Text>
           </Item>
 
-          <Item img={require('../../showcaseAssets/4.png')}
+          <Item img={require('../../assets/4.png')}
             cost="R$20,90"
             onClick={() => alert('clicou')}>
             <Text>
